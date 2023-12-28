@@ -45,7 +45,7 @@ environment {
 				agent { label 'tomcat-server' }
     				steps {
       					sh 'echo "Build ID: ${BUILD_ID}"'
-					build 'demo'
+					build 'Date_Job'
     					}
 				}
 	
