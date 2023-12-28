@@ -8,8 +8,8 @@ parameters {
 }
 
 environment {
-		envi = "${nithish.Environment}"
-  		user = "${nithish.usr}"
+		envi = "${params.Environment}"
+  		user = "${params.usr}"
 }
 
 	stages {		
