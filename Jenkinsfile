@@ -1,7 +1,12 @@
 pipeline {
 
 agent none
-
+	
+triggers {
+  cron '* * * * *'
+  pollSCM '* * * * *'
+}
+	
 parameters {
   choice choices: ['dev', 'qa'], name: 'Environment'
   string defaultValue: 'Nitish', name: 'usr'
