@@ -47,7 +47,7 @@ environment {
 				when {
                 		expression { currentBuild.resultIsBetterOrEqualTo('SUCCESS') }
             			}
-				agent { label 'tomcat-server' }
+				agent { label 'agent-ubuntu2' }
     				steps {
       					sh 'echo "Build ID: ${BUILD_ID}"'
 					
